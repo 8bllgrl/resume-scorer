@@ -1,0 +1,24 @@
+# --- Project Specific ---
+# Ignore all user-generated data (Resumes and Job Descriptions)
+data/
+
+# --- Python ---
+# Ignore compiled bytecode (makes the repo messy)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments
+venv/
+ENV/
+.env
+
+# --- IDEs ---
+# Ignore PyCharm settings (already in your repo, good to ignore now)
+.idea/
+.vscode/
+
+# --- System ---
+# Ignore Windows thumbnail caches
+Thumbs.db
+desktop.ini
