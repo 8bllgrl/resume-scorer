@@ -1,0 +1,6 @@
+{
+  "python": ["py", "cpython", "python3"],
+  "aws": ["amazon web services", "cloudformation", "boto3"],
+  "javascript": ["js", "es6"],
+  "react": ["reactjs", "react.js"]
+}

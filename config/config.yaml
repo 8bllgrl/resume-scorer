@@ -1,0 +1,19 @@
+# config/config.yaml
+paths:
+  resumes_dir: "data/resumes"
+  jobs_dir: "data/job_descriptions"
+  parsed_cache: "data/cache"
+
+weights:
+  keyword_weight: 1.2
+  verb_weight: 1.1
+  quantified_bullet_boost: 1.5
+
+settings:
+  top_bullet_count: 10
+  use_sentiment: true
+  save_parsed_text: true
+
+# Add tech here you want to be warned about
+flags:
+  outdated_tech: ["AngularJS", "Flash", "Java 6", "VB6"]

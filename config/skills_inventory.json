@@ -1,0 +1,13 @@
+{
+  "languages": ["python", "java"],
+
+  "frameworks": ["spring boot",  "junit"],
+
+  "cloud": ["aws" ],
+
+  "databases": ["postgresql" ],
+
+  "tools": ["git", "jira", "postman" ],
+
+  "soft_skills": ["mentoring" ]
+}
