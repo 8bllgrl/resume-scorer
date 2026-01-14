@@ -3,7 +3,7 @@
 
   "frameworks": ["spring boot",  "junit"],
 
-  "cloud": ["aws" ],
+  "cloud": ["aws"],
 
   "databases": ["postgresql" ],
 

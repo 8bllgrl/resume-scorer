@@ -1,0 +1,6 @@
+{
+  "top_k_count": 10,
+  "deduplicate_bullets": true,
+  "min_bullet_length": 25,
+  "fuzzy_threshold": 85
+}
