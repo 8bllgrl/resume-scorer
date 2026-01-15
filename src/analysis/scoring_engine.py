@@ -2,7 +2,7 @@ import json
 import re
 from pathlib import Path
 from src.analysis.vector_compare import calculate_match_score, score_line_against_text
-from src.utils.file_utils import get_bullet_points
+from src.utils.file_utils import get_bullet_points, structural_split
 from src.analysis.sentiment import is_context_positive
 
 PROJECT_ROOT = Path(__file__).parent.parent.parent
@@ -28,11 +28,15 @@ def normalize_text(text, synonyms):
 
 
 def analyze_match(resume_path, job_path):
-    # 1. Load Data & Configs
+    # 1. Load Data
     with open(resume_path, 'r', encoding='utf-8') as f:
         resume_raw = f.read()
     with open(job_path, 'r', encoding='utf-8') as f:
         job_raw = f.read()
+
+    # NEW: Pre-process structural markers
+    resume_raw = structural_split(resume_raw)
+    job_raw = structural_split(job_raw)
 
     inventory = load_json_config("skills_inventory.json")
     synonyms = load_json_config("synonyms.json")
